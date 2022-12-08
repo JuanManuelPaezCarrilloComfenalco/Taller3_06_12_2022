@@ -1,16 +1,11 @@
 addEventListener("DOMContentLoaded", (e)=>{ 
    
-   let num=parseInt(prompt("Ingrese un número"));
 
-   let suma=0;
+   let num1= parseInt(prompt("Introduzca un número"));
+   let num2= parseInt(prompt("Introduzca otro número"));
    
-   for (let i = 1; i <= num; i++) {
-   suma+=i;
-   
-   if (i==num) {
-       alert("numeros leidos son:" + suma)
-   }
-   }     
+   let r=num1+num2
+   alert("El resultado es:" + (r))
 })
     
 
