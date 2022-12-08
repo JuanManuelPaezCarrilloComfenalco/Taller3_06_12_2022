@@ -1,27 +1,16 @@
 addEventListener("DOMContentLoaded", (e)=>{ 
    
+   let num=parseInt(prompt("Ingrese un número"));
 
-   let numero1=prompt('Digita un numero')
-   alert("el numero ingresado es:" + numero1)
+   let suma=0;
    
-   let numero2=prompt('digita un segundo numero')
-   alert("el segundo numero ingresado es:" + numero2)
-
-   if(numero1 > numero2){
-   alert("el numero mayor es" + numero1)
+   for (let i = 1; i <= num; i++) {
+   suma+=i;
+   
+   if (i==num) {
+       alert("numeros leidos son:" + suma)
    }
-   else {
-      alert("el numero mayor es" + numero2)
-   }
-    
-   
-
-   
-   
-   
-      
-   
-   
+   }     
 })
     
 
