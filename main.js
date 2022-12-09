@@ -1,11 +1,13 @@
 addEventListener("DOMContentLoaded", (e)=>{ 
    
 
-   let num1= parseInt(prompt("Introduzca un número"));
-   let num2= parseInt(prompt("Introduzca otro número"));
-   
-   let r=num1+num2
-   alert("El resultado es:" + (r))
+ function numerosPares(){
+   for (let index = 2; index <=100; index += 2){
+      console.log(index);
+   }
+ }
+ 
+ numerosPares();
 })
     
 
