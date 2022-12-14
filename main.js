@@ -1,30 +1,31 @@
 addEventListener("DOMContentLoaded", (e)=>{
 
-  
-  let lista = [];
-  let suma = 0;
-  let mult = 1;
-  while(confirm("Desea ingresar datos")){
-      lista.push(prompt());
+  // Función que determina si un número es perfecto
+function esPerfecto(n) {
+  // Suma de los divisores del número (excluyendo el propio número)
+  var suma = 0;
+
+  // Recorremos todos los posibles divisores del número
+  for (var i = 1; i < n; i++) {
+    // Si el número es divisible por i, lo añadimos a la suma
+    if (n % i == 0) {
+      suma += i;
+    }
   }
-  for (let i = 0; i < lista.length; i++) {
-      if(lista[i] % 2 == 0){
-          suma += Number(lista[i]);
-      }else{
-          mult *= Number(lista[i]);
-      }
+  // Si la suma de los divisores es igual al propio número, es perfecto
+  if (suma == n) {
+    return true;
+  } else {
+    return false;
   }
-  console.log(`La suma de los pares es: ${suma}`);
-  console.log(`El producto de los impares es: ${mult}`);
-  console.log(lista);
+}
+// Ejemplo: Comprobamos si el número 28 es perfecto
+if (esPerfecto(21)) {
+  console.log("El número 28 es perfecto");
+} else {
+  console.log("El número 28 no es perfecto");
+}
 
 })
-   
-   
-
-    
-
-
-    
 
  
